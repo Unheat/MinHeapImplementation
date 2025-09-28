@@ -1,0 +1,23 @@
+{
+    "files.associations": {
+        "__bit_reference": "cpp",
+        "string": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "sstream": "cpp",
+        "streambuf": "cpp",
+        "string_view": "cpp",
+        "tuple": "cpp",
+        "variant": "cpp",
+        "complex": "cpp",
+        "iterator": "cpp",
+        "memory_resource": "cpp",
+        "__locale": "cpp",
+        "bitset": "cpp",
+        "ios": "cpp",
+        "locale": "cpp",
+        "new": "cpp",
+        "typeinfo": "cpp",
+        "limits": "cpp"
+    }
+}
