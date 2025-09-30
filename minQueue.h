@@ -46,6 +46,11 @@ class minQueue {
         int numberOfElements;
         int capacity;
         T* myArray;
+        
+        int parent(int i) const;
+        int left(int i) const;
+        int right(int i) const;
+        void swap (int indexA, indexB);
 };
 
 #include "minQueue.cpp"
