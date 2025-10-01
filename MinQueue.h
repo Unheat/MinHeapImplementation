@@ -1,13 +1,13 @@
 //========================================================
 // CS 271
 // Fall 2025
-// minQueue.h
-// This file contains the minQueue class declaration.  
+// MinQueue.h
+// This file contains the MinQueue class declaration.  
 // carefully.
 //========================================================
 
-#ifndef MINQUEUE_H
-#define MINQUEUE_H
+#ifndef MinQueue_H
+#define MinQueue_H
 
 #include <iostream>
 #include <string>
@@ -15,44 +15,40 @@
 #include <cstdlib>
 
 template <class T> 
-class minQueue {
+class MinQueue{
     public:
-        minQueue();
-        minQueue(T* A, int n);
-        ~minQueue();
-        minQueue(const minQueue<T>& other);
-        minQueue<T>& operator=(const minQueue<T>& other);
+        MinQueue();
+        MinQueue(T* A, int n);
+        ~MinQueue();
+        MinQueue(const MinQueue<T>& other);
+        MinQueue<T>& operator=(const MinQueue<T>& other);
 
         void insert(T x);
         T min() const; // Still need to do 
-        T extractMin(); // Still need to do 
-        void decreaseKey(int i, T k); // Still need to do
-        void minHeapify(int i);
-        void buildHeap(); 
+        T extract_min(); // Still need to do 
+        void decrease(int i, T k); // Still need to do
+        void min_heapify(int i);
+        void build_heap()(); 
         void sort(T* A); // Still need to do 
 
         void set(int i, T val); // Still need to do 
         void allocate(int n); // Still need to do
-        std::string toString() const;
+        std::string to_string() const;
         void printHeap(); // Still need to do 
 
         void clear();
-        int parent(int i) const;
-        int left(int i) const;
-        int right(int i) const;
-        void swap (int indexA, indexB);
 
     private:
         int numberOfElements;
         int capacity;
         T* myArray;
-        
+
         int parent(int i) const;
         int left(int i) const;
         int right(int i) const;
-        void swap (int indexA, indexB);
+        void swap(int indexA, int indexB);
 };
 
-#include "minQueue.cpp"
+#include "MinQueue.cpp"
 
 #endif
