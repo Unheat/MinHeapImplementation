@@ -24,17 +24,17 @@ class MinQueue{
         MinQueue<T>& operator=(const MinQueue<T>& other);
 
         void insert(T x);
-        T min() const; // Still need to do 
-        T extract_min(); // Still need to do 
-        void decrease(int i, T k); // Still need to do
+        T min() const; 
+        T extract_min(); 
+        void decrease_key(int i, T k); 
         void min_heapify(int i);
-        void build_heap()(); 
+        void build_heap(); 
         void sort(T* A); // Still need to do 
 
-        void set(int i, T val); // Still need to do 
-        void allocate(int n); // Still need to do
+        void set(int i, T val); 
+        void allocate(int n); 
         std::string to_string() const;
-        void printHeap(); // Still need to do 
+        void printHeap() const; 
 
         void clear();
 
@@ -46,7 +46,7 @@ class MinQueue{
         int parent(int i) const;
         int left(int i) const;
         int right(int i) const;
-        void swap(int indexA, int indexB);
+        void swapIndex(int indexA, int indexB);
 };
 
 #include "MinQueue.cpp"
