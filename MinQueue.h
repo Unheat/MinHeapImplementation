@@ -37,7 +37,8 @@ class MinQueue{
         void printHeap() const; 
 
         void clear();
-
+        int get_size();
+        int get_capacity();
     private:
         int numberOfElements;
         int capacity;

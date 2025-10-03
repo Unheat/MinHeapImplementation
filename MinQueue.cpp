@@ -4,6 +4,11 @@
 #include <sstream>
 #include <cstdlib>
 #include <iostream>
+
+#include <chrono>
+#include <stdexcept>
+
+#include <vector> // for testing
 using namespace std;
 
 template <class T>
@@ -257,6 +262,14 @@ void MinQueue<T>::clear() {
     capacity = 100;
     numberOfElements = 0;
     myArray = new T[capacity];
+}
+template <class T> 
+int MinQueue<T>::get_size() {
+    return numberOfElements;
+}
+template <class T> 
+int MinQueue<T>::get_capacity() {
+    return capacity;
 }
 template <class T>
 int MinQueue<T>::parent(int i) const {
